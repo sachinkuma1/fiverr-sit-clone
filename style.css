@@ -1,137 +1,145 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 
 /* -------------general section----------------------- */
-html{
-    /* font-size:10px; */
-    font-size:62.5%;
-    /* overflow-x: hidden; */
+html {
+  /* font-size:10px; */
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
 }
-
 
 /* building header section */
 
-
-body{
-    font-family: sans-serif;
-   font-weight: 400;
+.the-biggest-container{
+    background-image:url(./images/background-image.webp);
+    background-size:cover;
+    height:130vh;
 }
 
-
-.logo-img{
-    height:3.6rem;
-    width:auto;
-   
-   
+body {
+  font-family: sans-serif;
+  font-weight: 400;
 }
-.header{
-    display:flex;
-    justify-content: space-between;
-    /* width:110rem;
+
+.logo-img {
+  height: 3.6rem;
+  width: auto;
+  filter: invert(48%) sepia(79%) saturate(245%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+.header {
+   padding:2rem 0; 
+  display: flex;
+  justify-content: space-between;
+  /* width:110rem;
     margin:0 auto; */
-    /* justify-content: center; */
-    align-items: center;
-    padding:1.4rem 2rem;
-    font-weight: bold;
-    background-color: #3B444B;
-    color:white;
+  /* justify-content: center; */
+  align-items: center;
+  
+  font-weight: bold;
+ 
+  color: white;
+  
 }
 
-.main-nav-list{
+
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+.main-nav {
     display:flex;
-    justify-content: space-between;
-    gap:2rem;
-    list-style: none;
-    align-items: center;
-}
-.main-nav{
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-nav-link{
-    font-size:1.6rem;
+.main-nav-link {
+  font-size: 1.6rem;
 }
 
-.join-btn{
-    border: 1px solid white;
-    padding:.4rem 1rem;
-    border-radius: 4px;
+.join-btn {
+  border: 1px solid white;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
 }
 
 /*--------------------------- hero section ------------------ */
-.grid-2-cols{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-.kute-ka-photo{
-     justify-self: flex-end;
-     /* width:200%; */
-     /* border:2px solid black; */
-     overflow: hidden;
-     height: 100vh;
-     align-items:center;
-}
-/* .kutte-ka-photo{
-    width:150%;
-    
-} */
 
 
+.the-biggest-container{
+    position:relative;
+}
 .form-section{
-    display:flex;
-    /* flex-direction: column; */
-   align-items: center;
-   /* justify-content: center; */
-   /* background-color: #555; */
-   color:white;
+    position:absolute;
+    top:50%;
+    right:70%;
+    transform:translate(50%,-50%);
 }
-.wrapper-3{
-    margin-left:2rem;
+
+.container-hero-section{
+    max-width:110rem;
+    margin:0 auto;
+}
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 
-.popular{
-    list-style:none;
-    display:flex;
-    gap:1.2rem;
-    padding:1.4rem 0;
-}
-
-.popular-list{
-    border:1px solid rgb(255, 253, 253);
-    border-radius: 11px;
-    padding:.2rem .8rem;
-    
-}
-.popular-list-1{
-    padding:.2rem 0;
+.form-section {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: #555; */
+  color: white;
+  /* background-color:antiquewhite; */
 }
 
 
-.hero-para{
-    font-size:3.6rem;
-    font-weight: bold;
-    margin-bottom:2rem;
-    
-}
-.placeholder{
-    display:flex;
+.popular {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.4rem 0;
 }
 
-.placeholder input{
-    /* width:100%; */
-    padding:.6rem 1rem;
-    padding-right: 18rem;
-    font-size: 2rem;
+.popular-list {
+  border: 1px solid rgb(255, 253, 253);
+  border-radius: 11px;
+  padding: 0.2rem 0.8rem;
+}
+.popular-list-1 {
+  padding: 0.2rem 0;
+}
+
+.hero-para {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.placeholder {
+  display: flex;
+}
+
+.placeholder input {
+  /* width:100%; */
+  padding: 0.6rem 1rem;
+  padding :1rem 24rem 1rem 3rem;
+  
+  font-size: 2rem;
+  outline:none;
 }
 
 .placeholder button{
-    padding:.6rem 1rem;
+    padding:1rem 1rem;
     background-color: rgb(16, 194, 36);
     color:white;
     border:none;
@@ -142,106 +150,94 @@ body{
     
 }   
 
-.hero-section{
-    background-color:#3B444B;
-}
 
 
 /* trusted section */
-.trusted-section{
-   max-width:130rem;
-   /* margin:0 auto ; */
-    height:auto;
-    display:flex;
-   justify-content: center;
-   align-items: center;
-   padding:1.2rem 1.2rem;
-    background-color:rgb(203, 239, 241);
-
+.trusted-section {
+  max-width: 130rem;
+  /* margin:0 auto ; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 1.2rem;
+  background-color: rgb(203, 239, 241);
 }
 
-.trusted-section-1{
-    display:flex;
-   gap:2rem;
+.trusted-section-1 {
+  display: flex;
+  gap: 2rem;
 }
 
-.trusted-section-img{
-    height:4.4rem;
+.trusted-section-img {
+  height: 4.4rem;
 }
-
 
 /* -----------building service section------------------- */
-.container{
-    max-width:110rem;
-    margin:6.4rem auto;
-    /* background-color: rgb(129, 160, 188); */
-
+.container {
+  max-width: 110rem;
+  margin: 6.4rem auto;
+  /* background-color: rgb(129, 160, 188); */
 }
 
-
-.heading-services{
-    font-weight: 600;
-    font-size:3.6rem;
-    color:#111;
-    margin-bottom:2rem;
+.heading-services {
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #111;
+  margin-bottom: 2rem;
 }
 
-.grid-4-cols{
-    /* max-width:10rem; */
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:2rem;
-  
-
+.grid-4-cols {
+  /* max-width:10rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
-
-.photo-box{
-    border-radius:.8rem;
-    overflow:hidden;
+.photo-box {
+  border-radius: 0.8rem;
+  overflow: hidden;
 }
 
-.services-img{
-    width:100%;
+.services-img {
+  width: 100%;
 }
 
 /* two button---->absolute positioned-- */
 /* make two buttons and add two icons from heroicons initially remove border of button
 then make it positioned absolute and parent element make relative  */
-.btn{
-    border:none;
-    /* giving height to button */
-    height:4rem;
-    width:4rem;
-   position: absolute;
-   border-radius:50%;
-   /* making icon centered inside button */
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   
-   box-shadow: 0 1.2rem 2.4rem rgba(1, 1, 1, 0.416);
+.btn {
+  border: none;
+  /* giving height to button */
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  border-radius: 50%;
+  /* making icon centered inside button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 1.2rem 2.4rem rgba(1, 1, 1, 0.416);
 }
 
-.grid-4-cols{
-    position:relative;
-   
+.grid-4-cols {
+  position: relative;
 }
-.btn-icon{
-    height:2rem;
-    width:2rem;
+.btn-icon {
+  height: 2rem;
+  width: 2rem;
 }
 
-
-.btn-left{
-    /* top:0; */
-    left:0;
-    top:50%;
-    transform:translate(-50%,-50%);
+.btn-left {
+  /* top:0; */
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.btn-right{
-    /* top:0; */
-    right:0;
-    top:50%;
-    transform:translate(50%  , -50%);
+.btn-right {
+  /* top:0; */
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
