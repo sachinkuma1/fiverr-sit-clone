@@ -241,3 +241,260 @@ then make it positioned absolute and parent element make relative  */
   top: 50%;
   transform: translate(50%, -50%);
 }
+
+
+/*---------------------- building woman image section ---------------------------- */
+
+
+.section-woman{
+  height:90rem;
+  /* display:flex; */
+  
+  background-color: #fffbf8;
+}
+.woman-img{
+  width:100%;
+  
+}
+
+
+
+
+.woman-img-par{
+  font-size:2.6rem;
+  color:#333;
+}
+
+
+
+.section-woman{
+  position:relative;
+ 
+}
+.woman-img-cover{
+  position:absolute;
+  top:50%;
+  right:50%;
+  transform:translate(90%,-50%);
+
+} 
+
+.icon{
+  height:2.8rem;
+  width:2.8rem;
+  margin-right:.8rem;
+  color:#555;
+  font-weight: 700;
+}
+
+.icon-and-text{
+  display:flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+
+
+.grid-2-colsss{
+  width:35%;
+  margin:4rem;
+  padding-top:9.6rem;
+}
+
+.heading-primary{
+  font-size:3.6rem;
+  color:#444;
+}
+
+.heading-primary{
+  margin-bottom:2rem;
+}
+
+.small-para{
+  font-weight: bold;
+  font-size:2rem;
+  color:#333;
+}
+
+.small-paragraph{
+  font-size:1.8rem;
+  color:#666;
+  line-height: 1.5;
+  letter-spacing:.1rem;
+}
+
+.list{
+  list-style: none;
+
+}
+.list-item{
+  margin-bottom:3.6rem;
+}
+
+
+/* ---------------icon-section---------------- */
+.grid-5-cols{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap:5rem;
+}
+
+.icon-photo{
+  width:30%;
+}
+
+.icon-and-paragraph{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-para-down{
+  font-size:1.6rem;
+  color:#666;
+  margin-top:1.1rem;
+}
+
+
+
+/* <------------------------------------building fiver business----------------------------------> */
+.fiver-business{
+  background-color:#32174D;
+}
+.fiver-business-img{
+  width:100%;
+}
+
+.text-side button{
+  color:white;
+  border-radius:11px;
+  background-color: #1F75FE;
+  padding:.2rem 1.1rem;
+  border:none;
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
+  font-size:1.1rem;
+}
+
+.text-btn{
+  display:flex;
+  gap:1.2rem;
+  align-items: center;
+}
+.fiver-business-heading{
+  color:white;
+  font-weight: 700;
+  font-size:2.4rem;
+}
+
+.fiver-business-heading-primary{
+  color:white;
+  font-size:3rem;
+  font-weight: 700;
+}
+
+.business-paragraph{
+  color:white;
+  font-size:1.8rem;
+  line-height: 1.6;
+}
+
+.icon-para{
+  color:white;
+  font-size:1.6rem;
+}
+
+.container-business{
+  padding-top:9.6rem;
+  padding-bottom:9.6rem;
+}
+
+
+.bttn{
+  margin-top:6rem;
+}
+.btnn{
+  text-decoration: none;
+}
+.btnn:link, .btnn:visited{
+  text-decoration:none;
+  display:inline-block;
+  color:#333;
+  font-weight:500;
+  font-size:1.6rem;
+  /* transition is put in original state */
+  transition:all 0.4s;
+  border:3px;
+  background-color:#e67e22;
+  padding:1rem  3.2rem;
+  color:white;
+  border-radius:6px;
+}
+.btnn:hover, .btnn:active{
+
+  background-color:#cf711f;
+}
+
+.text-side{
+  display:flex;
+flex-direction: column;
+gap:3rem;
+}
+
+
+/* <--------fiver-logo-maker------------------------------> */
+
+.logo-maker-margin{
+  width:40%;
+  margin-left:6.9rem;
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.fiverr-logo-maker{
+  margin-top:9rem;
+  height:30rem;
+  background-image: url(./images/logo\ marker\ banner.webp);
+  background-size:cover;
+  background-color: #5f5fcd;
+}
+.fiver-logo-img{
+  width:100%;
+}
+
+.heading-fiver{
+  margin-top:3.6rem;
+  color:white;
+  font-size:2.4rem;
+}
+.heading-fiver-primary{
+  font-size:3.6rem;
+  color:white;
+}
+.para{
+  color:white;
+  font-size:1.5rem;
+}
+
+.fiver-btn:link ,.fiver-btn:visited{
+  
+  text-decoration:none;
+  display:inline-block;
+  color:#333;
+  font-weight:500;
+  font-size:1.6rem;
+  /* transition is put in original state */
+  transition:all 0.4s;
+  border:3px;
+  background-color:white;
+  padding:1rem  3.2rem;
+  color:blue;
+  border-radius:6px;
+}
+
+.fiver-btn:hover , .fiver-btn:active{
+  background-color:#F5F5F5;
+}
+
