@@ -26,8 +26,12 @@ body {
 .logo-img {
   height: 2.8rem;
   width: auto;
-  filter: invert(48%) sepia(79%) saturate(245%) hue-rotate(86deg)
-    brightness(118%) contrast(119%);
+  /* filter: invert(48%) sepia(79%) saturate(245%) hue-rotate(86deg)
+    brightness(118%) contrast(119%); */
+  /* color: white; */
+  /* fill: white; */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg)
+    brightness(104%) contrast(102%);
 }
 .header {
   padding: 2.6rem 0;
@@ -62,7 +66,7 @@ body {
 
 .join-btn {
   border: 1px solid white;
-  padding: 0.4rem 1rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 4px;
 }
 
@@ -107,6 +111,7 @@ body {
   display: flex;
   gap: 1.2rem;
   padding: 1.4rem 0;
+  margin-top: 10px;
 }
 .popular li {
   font-size: 1.5rem;
@@ -114,6 +119,7 @@ body {
 .popular li:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 .popular-list {
   border: 1px solid rgb(255, 253, 253);
@@ -124,7 +130,10 @@ body {
   padding: 0.2rem 0;
   letter-spacing: 0.02rem;
 }
-
+.popular-list-1:hover {
+  background-color: transparent;
+  color: white;
+}
 .hero-para {
   font-size: 4.5rem;
   font-weight: bold;
@@ -136,12 +145,21 @@ body {
   display: flex;
   border-radius: 5px;
 }
-
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+.search {
+  border-radius: 3px;
+}
 .placeholder input {
   /* width:100%; */
   padding: 0.6rem 1rem;
-  padding: 1rem 24rem 1rem 3rem;
-
+  padding: 1rem 24rem 1rem 1.5rem;
+  border: none;
   font-size: 2rem;
   outline: none;
 }
@@ -154,7 +172,7 @@ body {
   margin-left: -0.2rem;
   font-size: 2.3rem;
   outline: none;
-  /* border-radius:8px; */
+  border-radius: 3px;
 }
 
 /* trusted section */
